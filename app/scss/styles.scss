@@ -1,0 +1,75 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+@import 'variables';
+
+//  Global Styles
+
+header{
+    background-color: yellow;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    font-size: 4em;
+}
+
+h1{
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+nav { 
+    font-size: 1.2em;
+    text-align: center;
+    background-color: white;
+    border: solid black 1px;
+    margin: 5px;
+}
+
+nav ul { 
+    list-style-type: none; 
+    padding-left: 1em;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding-left: 0;
+}
+
+nav li {
+    padding-top: .5em;
+     padding-bottom: .5em;
+     padding-left: 1em;
+     padding-right: 1em;
+     width: 100%;
+}
+
+nav a { text-decoration: none; }
+nav a:link { color: black; }
+nav a:visited { color: black; }
+nav a:hover { color: red; }
+
+#wrapper{
+    margin: auto;
+    width: 80%;
+}
+
+h2{
+    text-align: center;
+    padding: 3px;
+}
+
+
+// Home Page Styles
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Footer Styles
+footer{
+    background-color: yellow;
+    color: red;
+    text-align: center;
+    padding: 5px;
+}

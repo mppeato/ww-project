@@ -58,6 +58,15 @@ h2{
     padding: 3px;
 }
 
+body{
+    background: linear-gradient(to bottom, yellow 20%, #d14843, yellow 100%);
+}
+
+main{
+    background-color: white;
+    padding: 10px;
+}
+
 
 // Home Page Styles
 .center{
@@ -65,6 +74,19 @@ h2{
     margin-left: auto;
     margin-right: auto;
 }
+
+#buisinfo{
+    text-align: center;
+    color: red;
+}
+
+#imgborder{
+    border: black double 10px;
+}
+
+
+// Menu Page Styles
+
 
 // Footer Styles
 footer{

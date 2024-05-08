@@ -2,6 +2,14 @@
 
 @import 'variables';
 
+// variable
+$font-family: Arial, sans-serif;
+
+// mixin
+@mixin border($width, $style, $color) {
+    border: $width $style $color;
+  }
+
 //  Global Styles
 
 header{
@@ -18,29 +26,30 @@ h1{
     font-weight: bold;
 }
 
+// Nesting Example
 nav { 
     font-size: 1.2em;
     text-align: center;
     background-color: white;
     border: solid black 1px;
     margin: 5px;
-}
 
-nav ul { 
-    list-style-type: none; 
-    padding-left: 1em;
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding-left: 0;
-}
+    ul{
+        list-style-type: none; 
+        padding-left: 1em;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding-left: 0;
 
-nav li {
-    padding-top: .5em;
-     padding-bottom: .5em;
-     padding-left: 1em;
-     padding-right: 1em;
-     width: 100%;
+        li{
+            padding-top: .5em;
+            padding-bottom: .5em;
+            padding-left: 1em;
+            padding-right: 1em;
+            width: 100%;
+        }
+    }
 }
 
 nav a { text-decoration: none; }
@@ -58,8 +67,10 @@ h2{
     padding: 3px;
 }
 
+// Implementation of a variable
 body{
     background: linear-gradient(to bottom, yellow 20%, #d14843, yellow 100%);
+    font-family: $font-family;
 }
 
 main{
@@ -80,13 +91,43 @@ main{
     color: red;
 }
 
+// mixin example
 #imgborder{
-    border: black double 10px;
+    @include border(10px, double, black);
+}
+
+#homered h5{
+    color: red;
 }
 
 
 // Menu Page Styles
+%menu-font-color{
+    color: red;
+}
 
+#menu ul {
+    text-decoration: none;
+    text-align: left;
+}
+
+.price{
+    @extend %menu-font-color;
+}
+
+// implementation of extend/inheritence
+#menu h3{
+    background-color: yellow;
+    padding: 5px;
+    @extend %menu-font-color;
+}
+
+// Photos Page Styles
+#easteregg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 // Footer Styles
 footer{

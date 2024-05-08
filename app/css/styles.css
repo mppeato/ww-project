@@ -11865,7 +11865,6 @@ nav {
   border: solid black 1px;
   margin: 5px;
 }
-
 nav ul {
   list-style-type: none;
   padding-left: 1em;
@@ -11874,8 +11873,7 @@ nav ul {
   margin: 0;
   padding-left: 0;
 }
-
-nav li {
+nav ul li {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   padding-left: 1em;
@@ -11911,6 +11909,7 @@ h2, .h2 {
 
 body {
   background: linear-gradient(to bottom, yellow 20%, #d14843, yellow 100%);
+  font-family: Arial, sans-serif;
 }
 
 main {
@@ -11930,7 +11929,31 @@ main {
 }
 
 #imgborder {
-  border: black double 10px;
+  border: 10px double black;
+}
+
+#homered h5, #homered .h5 {
+  color: red;
+}
+
+#menu h3, #menu .h3, .price {
+  color: red;
+}
+
+#menu ul {
+  text-decoration: none;
+  text-align: left;
+}
+
+#menu h3, #menu .h3 {
+  background-color: yellow;
+  padding: 5px;
+}
+
+#easteregg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
